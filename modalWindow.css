@@ -1,0 +1,93 @@
+
+.modalWindow {
+    background: grey;
+    border: 3px solid grey;
+    border-radius: 6px;
+    left: 40%;
+    opacity: 1;
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    width: 400px;
+    transition: opacity 80ms linear;
+    overflow: hidden;
+    resize: both;
+    white-space: nowrap;
+}
+
+.modalTopBar {
+    border-bottom: 3px solid grey;
+    background-color: rgba(50, 50, 50, 1.5);
+    color: white;
+    height: 32px;
+    line-height: 32px;
+    width: 100%;
+/*
+    display: inline-block;
+*/
+}
+
+.modalTitle {
+    user-select: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    vertical-align: middle;
+}
+
+.modalContent {
+    color: white;
+    background: rgba(10, 10, 10, 1.4);
+    padding: 5px;
+    height: 100%;
+}
+
+.closeButton {
+    background-color: rgba(180, 180, 180, 0);
+    border: 2px solid rgba(180, 180, 180, 0);
+/*
+    color: #000000;
+*/
+    margin: 3px;
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    position: absolute;
+    left : 100%;
+    transform: translate(-30px,0);
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    border: 2px solid grey;
+    background-color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.closeButton:active {
+    background-color: rgb(120,120,120);
+}
+
+/* https://stackoverflow.com/questions/18920542/draw-an-x-in-css*/
+
+.closeButton:before, .closeButton:after{
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 2px;
+    /* background-color will be color of the x*/
+    background-color: black;
+}
+
+.closeButton:before{
+    transform: translate(1px, -1px) rotate(45deg) ;
+    left: 2px;
+}
+.closeButton:after{
+    transform: translate(-1px, -1px) rotate(-45deg) ;
+    right: 2px;
+}
+
+
+
+
