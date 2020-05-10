@@ -1,4 +1,7 @@
 
+
+//adapted from https://www.w3schools.com/howto/howto_js_draggable.asp
+
 function makeElementDraggable(element, dragger) {
     var initialOffsetLeft = 0;
     var initialOffsetTop = 0;
