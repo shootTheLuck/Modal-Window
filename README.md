@@ -1,5 +1,5 @@
 ## What is this?
-A ModalWindow class made using the Custom Elements API and vanilla javascript..
+A ModalWindow class made using vanilla Javascript and the Custom Elements API. 
 
 [Live Demo Here](https://shootTheLuck.github.io/Modal-Window)
 
