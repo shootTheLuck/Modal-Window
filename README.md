@@ -1,5 +1,5 @@
 ## What is this?
-An HTML5 custom element for displaying a modal window.  I'm sure this wheel has been reinvented several times(!).
+A ModalWindow class made using the Custom Elements API and vanilla javascript..
 
 [Live Demo Here](https://shootTheLuck.github.io/Modal-Window)
 
