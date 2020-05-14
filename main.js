@@ -23,11 +23,17 @@ document.body.appendChild(modal);
 
 modal.open();
 
-var showModalButton = document.createElement("button");
-showModalButton.id = showModalButton;
-showModalButton.innerHTML = "Show Modal Window";
-showModalButton.style.fontSize = 12 + "px";
-document.body.appendChild(showModalButton);
+var showHideModalButton = document.createElement("button");
+showHideModalButton.id = showHideModalButton;
+showHideModalButton.innerHTML = "Show/Hide Modal Window";
+showHideModalButton.style.fontSize = 12 + "px";
+document.body.appendChild(showHideModalButton);
 
-showModalButton.onclick = function() {modal.open();};
+showHideModalButton.onclick = function() {
+    if (modal.closed) {
+        modal.open();
+    } else {
+        modal.close();
+    }
+};
 
