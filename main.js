@@ -1,5 +1,5 @@
 
-import ModalWindow from "./ModalWindow.js";
+import {ModalWindow} from "./ModalWindow.js";
 //import SpinBox from "./SpinBox.js";
 //import ColorPicker from "./ColorPicker.js";
 
