@@ -27,6 +27,7 @@ function makeElementDraggable(element, dragger) {
     }
 
     function endDrag() {
+
         document.removeEventListener("mouseup", endDrag, true);
         document.removeEventListener("mousemove", drag, true);
     }
@@ -123,4 +124,4 @@ class ModalWindow extends HTMLElement {
 
 customElements.define("modal-window", ModalWindow);
 
-export default ModalWindow;
+export {ModalWindow};
