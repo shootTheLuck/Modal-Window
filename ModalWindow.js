@@ -55,9 +55,9 @@ class ModalWindow extends HTMLElement {
 
         this.closeButton = document.createElement("button");
         this.closeButton.className = "closeButton";
-        // this.closeButton.addEventListener("mousedown", function(evt) {
-            // evt.stopPropagation();
-        // });
+        this.closeButton.addEventListener("mousedown", function(evt) {
+            evt.stopPropagation();
+        });
 
         this.closeButton.addEventListener("click", this.close.bind(this));
 

@@ -59,7 +59,9 @@
 .closeButton:focus {
     border: 2px solid grey;
     background-color: rgb(180, 180, 180);
+/*
     cursor: pointer;
+*/
 }
 
 .closeButton:active {
