@@ -7,7 +7,7 @@
     visibility: hidden;
     position: fixed;
     top: 30%;
-    left: 30%;
+    left: 70%;
     width: 400px;
     transition: opacity 80ms linear;
     overflow: hidden;
