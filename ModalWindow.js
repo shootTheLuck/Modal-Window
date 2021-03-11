@@ -39,10 +39,17 @@ class ModalWindow extends HTMLElement {
 
     constructor(opts = {}) {
         super();
-        var defaultWidth = "400px";
-        this.className = "modalWindow";
-        this.style.width = opts.width || defaultWidth;
-        this.style.resize = opts.resize || "both"; //"none", "vertical", "horizontal"
+
+        const defaults = {
+            className: "modalWindow",
+            width: "400px",
+            resize: "both", //"none", "vertical", "horizontal"
+            title: "Modal Window"
+        };
+
+        this.className = opts.className || defaults.className;
+        this.style.width = opts.width || defaults.width;
+        this.style.resize = opts.resize || defaults.resize;
 
         this.topBar = document.createElement("div");
         this.topBar.className = "modalTopBar";
@@ -51,7 +58,7 @@ class ModalWindow extends HTMLElement {
         this.titleText = document.createElement("span");
         this.titleText.className = "modalTitle";
         this.topBar.appendChild(this.titleText);
-        this.setTitle(opts.title || "Modal Window");
+        this.setTitle(opts.title || defaults.title);
 
         this.closeButton = document.createElement("button");
         this.closeButton.className = "closeButton";
